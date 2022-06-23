@@ -1,4 +1,6 @@
+<div align="center"> 
 Sistema-de-Gerenciamento-de-Folha-de-Pagamento
+ </div>
 ---
 
 <div align="center"> 
