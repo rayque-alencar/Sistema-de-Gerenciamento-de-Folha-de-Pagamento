@@ -1,3 +1,5 @@
 # Sistema-de-Gerenciamento-de-Folha-de-Pagamento
 
-<img src="Sistema-de-Gerenciamento-de-Folha-de-Pagamento"></img>
+<div align="center"> 
+  <img width="1000em" src="Class Diagram Example_ Company Structure.png"/>
+</div>
