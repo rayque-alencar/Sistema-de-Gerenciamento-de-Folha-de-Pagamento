@@ -1,12 +1,12 @@
 {
-  "cep": "58058-180",
-  "logradouro": "Rua Abelardo Clementino da Costa",
+  "cep": "63010-234",
+  "logradouro": "Rua Carlos Gomes",
   "complemento": "",
-  "bairro": "Mangabeira",
-  "localidade": "João Pessoa",
-  "uf": "PB",
-  "ibge": "2507507",
+  "bairro": "Centro",
+  "localidade": "Juazeiro do Norte",
+  "uf": "CE",
+  "ibge": "2307304",
   "gia": "",
-  "ddd": "83",
-  "siafi": "2051"
+  "ddd": "88",
+  "siafi": "1447"
 }

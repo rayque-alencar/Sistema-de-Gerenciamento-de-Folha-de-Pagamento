@@ -23,7 +23,8 @@ void Menu::menuInicial(){
     cout << "[10] - Pesquisar funcionario" << endl;
     cout << "[11] - Pesquisar funcionario por designacao de designacao" << endl;
     cout << "[12] - Ler arquivo de Funcionarios" << endl;
-    cout << "[0] - Finalizar Sistema" << endl;
+    cout << "[13] - Salvar arquivo de folha salarial" << endl;
+    cout << "[14] - Sair" << endl;
     cout << "\n--------------------------\n" << endl;
 
 }
@@ -697,7 +698,7 @@ void Menu::exibirFolhaDaEmpresa(){
         cout << "Digite o mes que voce deseja exibir: " << endl;
         cout << "[1] Janeiro" << endl;
         cout << "[2] Fevereiro" << endl;
-        cout << "[3] Março" << endl;
+        cout << "[3] Maro" << endl;
         cout << "[4] Abril" << endl;
         cout << "[5] Maio" << endl;
         cout << "[6] Junho" << endl;
@@ -892,6 +893,128 @@ void Menu::salvarArquivoFuncionario(){
             arquivo << vFuncionarios[i]->getAreaDeFormacao()<< endl;
             arquivo << vFuncionarios[i]->getFormacaoAcademicaMaxima()<< endl;
         }
+    }
+
+    arquivo.close();
+}
+
+void Menu::salvarArquivoFuncionario(int i){
+
+    fstream arquivo;
+    
+    switch(i){
+        case 1:
+
+            arquivo.open("FolhasSalariais/jan.txt", fstream::out);
+
+            if(arquivo.is_open()== false){
+            arquivo.open("FolhasSalariais/jan.txt", ios::out);                                 
+            }
+            break;
+        
+        case 2:
+            arquivo.open("FolhasSalariais/fev.txt", fstream::out);
+            
+            if(arquivo.is_open() == false){
+            arquivo.open("FolhasSalariais/fev.txt", ios::out);                                 
+            }
+            
+            break;
+        
+        case 3:
+        
+            arquivo.open("FolhasSalariais/mar.txt", fstream::out);
+            if(arquivo.is_open() == false){
+            arquivo.open("FolhasSalariais/mar.txt", ios::out);                                 
+            }
+            break;
+        
+        case 4:
+        
+            arquivo.open("FolhasSalariais/abr.txt", fstream::out);
+            if(arquivo.is_open() == false){
+            arquivo.open("FolhasSalariais/abr.txt", ios::out);                                 
+            }
+            break;
+        
+        case 5:
+            arquivo.open("FolhasSalariais/mai.txt", fstream::out);
+            if(arquivo.is_open() == false){
+            arquivo.open("FolhasSalariais/mai.txt", ios::out);                                 
+            }
+            break;
+        
+        case 6:
+        
+            arquivo.open("FolhasSalariais/jun.txt", fstream::out);
+            if(arquivo.is_open() == false){
+            arquivo.open("FolhasSalariais/jun.txt", ios::out);                                 
+            }
+            break;
+        
+        case 7:
+        
+            arquivo.open("FolhasSalariais/jul.txt", fstream::out);
+            if(arquivo.is_open() == false){
+            arquivo.open("FolhasSalariais/jul.txt", ios::out);                                 
+            }
+        
+        case 8:
+        
+            arquivo.open("FolhasSalariais/ago.txt", fstream::out);
+            if(arquivo.is_open() == false){
+            arquivo.open("FolhasSalariais/ago.txt", ios::out);                                 
+            }
+            break;
+        
+        case 9:
+        
+            arquivo.open("FolhasSalariais/set.txt", fstream::out);
+            if(arquivo.is_open() == false){
+            arquivo.open("FolhasSalariais/set.txt", ios::out);                                 
+            }
+            break;
+        
+        case 10:
+        
+            arquivo.open("FolhasSalariais/out.txt", fstream::out);
+            if(arquivo.is_open() == false){
+            arquivo.open("FolhasSalariais/out.txt", ios::out);                                 
+            }
+            break;
+        
+        case 11:
+        
+            arquivo.open("FolhasSalariais/nov.txt", fstream::out);
+            if(arquivo.is_open() == false){
+            arquivo.open("FolhasSalariais/nov.txt", ios::out);                                 
+            }
+            break;
+        
+        case 12:
+        
+            arquivo.open("FolhasSalariais/dez.txt", fstream::out);
+            if(arquivo.is_open() == false){
+            arquivo.open("FolhasSalariais/dez.txt", ios::out);                                 
+            }
+            break;
+        
+    }
+
+
+    for(int i = 0; i < vFuncionarios.size(); i++){
+        arquivo << "/" << endl;
+        arquivo << vFuncionarios[i]->getNumeroDoFuncionario() << endl;
+        arquivo << vFuncionarios[i]->getNome() << endl;
+        arquivo << vFuncionarios[i]->getSalario() << endl;
+        arquivo << vFuncionarios[i]->getFolhaSalarial(i).getSalarioLiquido() << endl;
+        arquivo << vFuncionarios[i]->getFolhaSalarial(i).getSalarioMesBrutoComHorasExtras() << endl;
+        arquivo << vFuncionarios[i]->getFolhaSalarial(i).getSalarioExtra() << endl;
+        arquivo << vFuncionarios[i]->getFolhaSalarial(i).getINSS() << endl;
+        arquivo << vFuncionarios[i]->getFolhaSalarial(i).getIRRF() << endl;
+        arquivo << vFuncionarios[i]->getFolhaSalarial(i).getINSS()  + vFuncionarios[i]->getFolhaSalarial(i).getIRRF() << endl;
+        arquivo << vFuncionarios[i]->getFolhaSalarial(i).getDiasTrabalhados() << endl;
+        arquivo << vFuncionarios[i]->getFolhaSalarial(i).getHorasExtras() << endl;        
     }
 
     arquivo.close();

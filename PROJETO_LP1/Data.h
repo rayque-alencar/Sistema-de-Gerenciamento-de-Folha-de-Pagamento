@@ -26,7 +26,7 @@ public:
     void exibirData();
 
 private:
-
+    //Atributos
     int dia;
     int mes;
     int ano;

@@ -38,6 +38,7 @@ public:
 
     void salvarArquivoFuncionario();
     void lerArquivoFuncionario();
+    void salvarArquivoFuncionario(int);
 
 private:
     //atributos

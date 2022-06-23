@@ -110,6 +110,7 @@ void Funcionarios::imprimirFolhaSalarial(int mes)
     
     cout << "--------------------------------------------------------------------------------" << endl;
     cout << "Nome do funcionario: " << nome << endl;
+    cout << "Salario base: R$ " << salario << endl;
     cout << "Salario Liquido: R$ " << folhaSalarial[mes-1].getSalarioLiquido() << endl;
     cout << "Salario Total: R$ " << folhaSalarial[mes-1].getSalarioMesBrutoComHorasExtras() << endl;
     cout << "Valor recebido com as horas extra: R$ " << folhaSalarial[mes-1].getSalarioExtra() << endl;
@@ -130,6 +131,7 @@ float Funcionarios::getSalarioAnual()
     for(int i = 0; i < 12; i++)
     {
         total += folhaSalarial[i].getsalario();
+
     }
 
     return total;
@@ -138,8 +140,27 @@ float Funcionarios::getSalarioAnual()
 
 void Funcionarios::exibirFolhaAnual(){
 
+    float aux, aux2, aux3, aux4, aux5,aux6;
+
+        for(int i = 0; i < 12; i++)
+    {
+        aux += folhaSalarial[i].getSalarioLiquido();
+        aux2 += folhaSalarial[i].getSalarioMesBrutoComHorasExtras();
+        aux3 += folhaSalarial[i].getSalarioExtra();
+        aux4 += folhaSalarial[i].getINSS();
+        aux5 += folhaSalarial[i].getIRRF();
+        aux6 += folhaSalarial[i].getINSS() + folhaSalarial[i].getIRRF();
+
+    }
+
     cout << "Folha salarial da empresa anual: "<< endl;
     cout << "Total: R$ " << getSalarioAnual() << endl;
+    cout << "Salario Liquido: R$ " << aux << endl;
+    cout << "Salario Total: R$ " << aux2 << endl;
+    cout << "Valor recebido com as horas extra: R$ " << aux3 << endl;
+    cout << "INSS: R$ " << aux4 << endl;
+    cout << "IRRF: R$ " << aux5 << endl;
+    cout << "Total de Descontos: R$ " << aux6 << endl;
     
 }
 
