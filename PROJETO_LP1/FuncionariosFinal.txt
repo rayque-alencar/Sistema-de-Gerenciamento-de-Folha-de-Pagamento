@@ -1,0 +1,64 @@
+/
+4545
+rayque alencar de melo
+Rua Valdemira Ribeiro Lima
+402
+Triângulo
+Juazeiro do Norte
+CE
+63040770
+(88) 99804-0236
+7
+2
+2022
+Operador
+2625
+/
+2525
+phellipe corno
+Rua 15 de Janeiro
+233
+Trincheiras
+João Pessoa
+PB
+58011298
+(88) 88888-9999
+13
+11
+2023
+Gerente
+3300
+nao
+/
+7845
+andre corno
+Rua 28 de Novembro
+344
+Ipês
+João Pessoa
+PB
+58028854
+(88) 889654-9678
+13
+11
+2020
+Gerente
+6000
+nao
+/
+2578
+davi corno
+Rua Abelardo Clementino da Costa
+233
+Mangabeira
+João Pessoa
+PB
+58058180
+(88) 88438-9129
+13
+11
+2025
+Presidente
+10400
+eng da computacao
+doutorado
