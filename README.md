@@ -1,5 +1,4 @@
-# Sistema-de-Gerenciamento-de-Folha-de-Pagamento
-
+Sistema-de-Gerenciamento-de-Folha-de-Pagamento
 ---
 
 <div align="center"> 
