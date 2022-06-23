@@ -91,5 +91,5 @@ console de texto.
 # Diagrama de classes (UML)
 
 <div align="center"> 
-  <img width="1000em" src="Class Diagram Example_ Company Structure.png"/>
+  <img width="1000em" src="Class Diagram"/>
 </div>
